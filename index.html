@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptacion Bryan Salva</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="principal">
+        <div class="principal-izquierdo">
+            <div class="izquierdo-arriba">
+                <textarea class="entrada-texto" placeholder="Ingrese un texto a encriptar o desencriptar" name="text" id="input-area" cols="60" rows="25"></textarea>
+            </div>
+            <div class="izquierdo-abajo">
+                <div class="izquierdo-advertencia">
+                    <img class="interrogacion" src="imagenes/exclamacion-circulo.png" alt="icono de interrogacion">
+                    <p class="warning">Solo letras en minusculas y sin acentos</p>
+                </div>
+                <ul class="botones">
+                    <li class="boton" onclick="encriptar()" id="boton-izquierdo">Encriptar</li>  
+                    <li class="boton" onclick="desencriptar()" id="boton-derecho">Descencriptar</li>  
+                </ul>
+            </div>
+        </div>
+        <div class="principal-derecho">
+            <div class="derecho-entrada">
+                <p class="mostrar" id="mostrar"></p>
+                <img id="logo" class="muneco" src="imagenes/muneco.png" alt="imagen de un niño">
+                <h2 id="h2">Ningun mensaje fue encontrado</h2>
+                <p id="derecho-p" class="derecho-p">Ingresa el texto que desees encriptar o descencriptar</p>
+                <button class="copiar" id="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy Realizado por Bryan Salva - Alura Latam    
+     </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
